@@ -116,6 +116,9 @@ p {
         display: flex;
         gap: 1.5rem;
     }
+    .daniel {
+        background-position: 22rem 0rem;
+    }
     .harmon, .patrick, .kira{
         margin-bottom: 0;
     }
