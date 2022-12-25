@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+html {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(210, 46%, 95%);
+}
+main {
+    max-width: 19.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.daniel, .walters, .harmon, .patrick, .kira {
+    padding: 1.8rem;
+    border-radius: 0.7rem;
+    margin-bottom: 1.2rem;
+}
+.daniel {
+    background-color: hsl(263, 55%, 52%);
+}
+.walters {
+    background-color: hsl(217, 19%, 35%);
+}
+.harmon {
+    background-color: hsl(0, 0%, 100%);
+}
+.patrick {
+    background-color: hsl(219, 29%, 14%);
+}
+.kira {
+    background-color: hsl(0, 0%, 100%);
+}
+.profile {
+    display: flex;
+    gap: 1rem;
+}
+.daniel {
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 11.5rem 0rem;
+}
+.img img {
+    max-width: 1.8rem;
+    border-radius: 50%;
+}
+.daniel .img img {
+    border: 2px solid hsla(210, 46%, 95%, 0.3);
+} 
+.patrick .img img {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+p {
+    font-size: 0.8125rem;
+}
+.profile p {
+    font-size: 0.88rem;
+}
+.profile p span {
+    font-size: 0.813rem;
+}
+.daniel .profile p, .walters .profile p, .patrick .profile p {
+    color: hsl(0, 0%, 100%);
+}
+.harmon .profile p, .kira .profile p {
+    color: hsl(217, 19%, 35%);
+}
+.daniel .profile span, .walters .profile span, .patrick .profile span, .harmon .profile span, .kira .profile span {
+    opacity: 0.5;
+}
+.daniel .bright, .walters .bright, .patrick .bright {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.harmon .bright, .kira .bright {
+    color:  hsl(217, 19%, 35%);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.daniel .dim, .walters .dim, .patrick .dim {
+    color: hsl(0, 0%, 100%);
+    opacity: 0.7;
+}
+.harmon .dim, .kira .dim {
+    color:  hsl(217, 19%, 35%);
+    opacity: 0.7;
+}
+
+@media (min-width: 700px) {
+    body {
+        min-height: 100vh;
+        align-items: center;
+    }
+    main {
+        margin: auto;
+        display: flex;
+        max-width: 67rem;
+        gap: 1.5rem;
+    }
+    .top {
+        width: 50rem;
+        display: flex;
+        gap: 1.5rem;
+    }
+    .bottom {
+        display: flex;
+        gap: 1.5rem;
+    }
+    .harmon, .patrick, .kira{
+        margin-bottom: 0;
+    }
+    .patrick .dim {
+        line-height: 1.2rem;
+    }
+    .kira .dim {
+        line-height: 1.11rem;
+    }
+}
+
